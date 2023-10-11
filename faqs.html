@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ's</title>
+    
+    <link rel="stylesheet" href="about-us.css">
+</head>
+<style>
+  .paragraph{
+    color:white;
+    text-align:left;
+    margin-left:20px;
+  }
+  .title-h2{
+    font-size: 20px;;
+    text-align:left;
+    margin-left:20px;
+  }
+  .aboutus{
+    text-align:left;
+    margin-left:20px;
+  }
+</style>
+<body>
+  <div>
+      
+
+      <div class="container">
+
+        <header>
+            <div class="app-info">
+                <img src="pics/logo.png" alt="App Icon" class="app-icon">
+                <p class="title">Two Wheeler Spot</p>
+            </div>
+            <div class="navbar">
+                <a href="login.html">Login</a>
+                <a href="signup.html">Sign Up</a>
+                <div class="menu-button" onclick="toggleSideMenu()">&#9776;</div>
+            </div>
+        </header>
+  
+        <!-- Side Menu -->
+        <div class="side-menu" id="sideMenu">
+            <span class="close-icon" onclick="toggleSideMenu()">&times;</span>
+            
+            <a href="about-us.html">About Us</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="contact-us.html">Contact-Us</a>
+            <a href="faqs.html">FAQs</a>
+            <a href="videos.html">Tutorial-Videos</a>
+            <a href="Feedbacks.html">Feedbacks</a>
+        </div>
+
+        
+  
+        <script>
+            function toggleSideMenu() {
+                var sideMenu = document.getElementById("sideMenu");
+                if (sideMenu.style.width === "250px") {
+                    sideMenu.style.width = "0";
+                } else {
+                    sideMenu.style.width = "250px";
+                }
+            }
+        </script>
+
+        <div class="about-us">
+          <h1 class="title-au">FAQ's</h1>
+          <h2 class="title-h2">What is Two Wheeler Spot?</h2>
+          <p class="paragraph">Two Wheeler Spot is a web-based platform that facilitates the sharing of bikes and bicycles within the community, offering a convenient and secure rental service.</p>
+          
+          <h2 class="title-h2">How does Two Wheeler Spot work?</h2>
+          <p class="paragraph">Bike and bicycle owners can list their vehicles on the platform for rent. Users in need of temporary transportation can browse the listings, select a vehicle, and make a booking. The platform ensures a seamless rental process.</p>
+
+          
+          <h2 class="title-h2">Is Two Wheeler Spot a free service?</h2>
+          <p class="paragraph">The pricing may vary depending on the vehicle owner's preferences. Some owners may offer their vehicles for free, while others may charge a rental fee. Users can choose from a variety of options.</p>
+
+          <h2 class="title-h2">How can I list my bike or bicycle for rent on Two Wheeler Spot?</h2>
+          <p class="paragraph">To list your vehicle, you need to create an account on the platform, provide the necessary details about your bike or bicycle, set your rental preferences, and make your listing available for users.</p>
+
+          <h2 class="title-h2">How can I contact Two Wheeler Spot for support or inquiries?</h2>
+          <p class="paragraph">You can visit the "Contact Us" section of our website to get in touch with our support team. We're here to assist you with any questions or concerns.</p>
+          
+        </div>
+
+
+    <footer class="footer">
+      <div class="footer-logo">
+          <!-- <img src="pics/logo.png" alt="Book Reselling Logo"> -->
+          <span class="footer-title">Two Wheeler Spot</span>
+          <p class="footer-text">Convient . Affordable . Quick</p>
+      </div>
+      <div class="footer-content">
+          <div class="footer-section">
+              <h2>Trade or Rent two wheelers</h2>
+              <p>This is a convient platform for temporary transport seekers and unused two wheeler holders</p>
+          </div>
+          <div class="footer-section">
+              <div class="follow-us">
+                  <h3>Follow Us</h3>
+                  <a href="#" class="social-media-link">
+                      <img src="pics/facebook.jpg" alt="Facebook">
+                      Facebook
+                  </a>
+                  <a href="#" class="social-media-link">
+                      <img src="pics/instagram.jpg" alt="Instagram">
+                      Instagram
+                  </a>
+                  <a href="#" class="social-media-link">
+                      <img src="pics/twitter.jpg" alt="Twitter">
+                      Twitter
+                  </a>
+              </div>
+          </div>
+          <div class="footer-section">
+              <h2>Quick Links</h2>
+              <ul class="quick-links">
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="contact-us.html">Contact</a></li>
+                <li><a href="privacy-policy.html">privacy-policy</a></li>
+              </ul>
+          </div>
+      </div>
+  </footer>
+      
+
+
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

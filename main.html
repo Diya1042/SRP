@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="main.css">
+    
+
+</head>
+<body>
+  <div>
+      
+
+      <div class="container">
+        <header>
+            <div class="app-info">
+                <img src="pics/logo.png" alt="App Icon" class="app-icon">
+                <p class="title">Two Wheeler Spot</p>
+            </div>
+            <div class="navbar">
+                <div class="language-dropdown">
+                    <select class="lang-drop" id="language" name="language">
+                        <option value="english">English</option>
+                        <option value="spanish">Spanish</option>
+                        <option value="french">French</option>
+                    </select>
+                </div>
+                <div class="menu-button" onclick="toggleSideMenu()">&#9776;</div>
+            </div >
+        </header>
+  
+        <!-- Side Menu -->
+        <div class="side-menu" id="sideMenu">
+            <span class="close-icon" onclick="toggleSideMenu()">&times;</span>
+            
+            <a href="about-us.html">About Us</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="contact-us.html">Contact-Us</a>
+            <a href="faqs.html">FAQs</a>
+            <a href="videos.html">Tutorial-Videos</a>
+            <a href="Feedbacks.html">Feedbacks</a>
+            <a>Chat with AI</a>
+            <a>Logout</a>
+        </div>
+  
+        <script>
+            function toggleSideMenu() {
+                var sideMenu = document.getElementById("sideMenu");
+                if (sideMenu.style.width === "250px") {
+                    sideMenu.style.width = "0";
+                } else {
+                    sideMenu.style.width = "250px";
+                }
+            }
+        </script>
+
+        <div class="availability-section">
+          <!-- <h2>Check Availability</h2> -->
+          <form>
+              <label class=label for="location">Location:</label>
+              <select id="location" name="location">
+                  <option value="location1">Andhra Pradesh</option>
+                  <option value="location2">Telangana</option>
+                  <!-- Add more location options as needed -->
+              </select>
+
+              <label for="startDate">Start Date:</label>
+              <input type="date" id="startDate" name="startDate" required>
+
+              <label for="endDate">End Date:</label>
+              <input type="date" id="endDate" name="endDate" required>
+
+              <label for="vehicleType">Vehicle Type:</label>
+              <select id="vehicleType" name="vehicleType">
+                  <option value="bike">Bike</option>
+                  <option value="bicycle">Bicycle</option>
+                  <option value="bicycle">Scooter</option>
+              </select>
+
+              <label for="rentType">Rental Type:</label>
+              <select id="rentType" name="rentType">
+                  <option value="hourly">Hourly</option>
+                  <option value="daily">Daily</option>
+              </select>
+
+              <label for="rentType">KM near me</label>
+              <select id="rentType" name="rentType">
+                  <option value="hourly">5km</option>
+                  <option value="hourly">10km</option>
+                  <option value="daily">15km</option>
+                  <option value="daily">20km</option>
+              </select>
+
+              <button class = submit type="submit">SEARCH</button>
+          </form>
+        </div>
+
+    <section class="bike-grid">
+      <div class="bike-item">
+        <div class="img">
+            <img src="page/bike1.jpg" alt="Book 1">
+        </div>
+        <div class="content">
+            <p class="sub-cat">Category :BIKE</p>
+            <p class="bike-name">Model: Yamaha</p>
+            <p class="bike-cost">Price: ₹450/hr</p>
+        </div>
+        <div class="details">
+            <button class="wishlist-button">Rent now</button>
+        </div>  
+      </div>
+
+      <div class="bike-item">
+        <div class="img">
+            <img src="page/scooty2.jpg" alt="Book 1">
+        </div>
+        <div class="content">
+            <p class="sub-cat">Category: SCOOTY</p>
+            <p class="bike-name">Model: Activa 125</p>
+            <p class="bike-cost">Price: ₹250</p>
+        </div>
+        <div class="details">
+            <button class="wishlist-button">Rent now</button>
+        </div>  
+      </div>
+
+      <div class="bike-item">
+        <div class="img">
+            <img src="page/cycle1.jpg" alt="Book 1">
+        </div>
+        <div class="content">
+            <p class="sub-cat">Category: BICYCLE</p>
+            <p class="bike-name">Model: Merida</p>
+            <p class="bike-cost">Price: ₹100/hr</p>
+        </div>
+        <div class="details">
+            
+            <button class="wishlist-button">Rent now</button>
+        </div>  
+      </div>
+
+      <div class="bike-item">
+        <div class="img">
+            <img src="page/scooty1.jpg" alt="Book 1">
+        </div>
+        <div class="content">
+            <p class="sub-cat">Category: Scooty</p>
+            <p class="bike-name">Model: Suzuki Access</p>
+            <p class="bike-cost">Price: ₹470/hr</p>
+        </div>
+        <div class="details">
+            
+            <button class="wishlist-button">Rent now</button>
+        </div>  
+      </div>
+
+      <div class="bike-item">
+        <div class="img">
+            <img src="page/bike3.jpg" alt="Book 1">
+        </div>
+        <div class="content">
+            <p class="sub-cat">Category: BIKE</p>
+            <p class="bike-name">Model: Hero Honda</p>
+            <p class="bike-cost">Price: ₹200/hr</p>
+        </div>
+        <div class="details">
+            
+            <button class="wishlist-button">Rent now</button>
+        </div>  
+      </div>
+
+      <div class="bike-item">
+        <div class="img">
+            <img src="page/scooty3.jpg" alt="Book 1">
+        </div>
+        <div class="content">
+            <p class="sub-cat">Category: SCOOTY</p>
+            <p class="bike-name">Model: Honda Dio</p>
+            <p class="bike-cost">Price: ₹40/hr0</p>
+        </div>
+        <div class="details">
+            
+            <button class="wishlist-button">Rent now</button>
+        </div>  
+      </div>
+
+      <div class="bike-item">
+        <div class="img">
+            <img src="page/bike2.jpg" alt="Book 1">
+        </div>
+        <div class="content">
+            <p class="sub-cat">Category: BIKE</p>
+            <p class="bike-name">Model: Suzuki</p>
+            <p class="bike-cost">Price: ₹350/hr</p>
+        </div>
+        <div class="details">
+            
+            <button class="wishlist-button">Rent now</button>
+        </div>  
+      </div>
+
+      <div class="bike-item">
+        <div class="img">
+            <img src="page/cycle2.jpg" alt="Book 1">
+        </div>
+        <div class="content">
+            <p class="sub-cat">Category: BICYCLE</p>
+            <p class="bike-name">Model: Butterfly</p>
+            <p class="bike-cost">Price: ₹150/hr</p>
+        </div>
+        <div class="details">
+            
+            <button class="wishlist-button">Rent now</button>
+        </div>  
+      </div>
+
+      <div class="bike-item">
+        <div class="img">
+            <img src="page/scooty4.jpg" alt="Book 1">
+        </div>
+        <div class="content">
+            <p class="sub-cat">Category: SCOOTY</p>
+            <p class="bike-name">Model: TVS Scooty just 110</p>
+            <p class="bike-cost">Price: ₹600/hr</p>
+        </div>
+        <div class="details">
+            
+            <button class="wishlist-button">Rent now</button>
+        </div>  
+      </div>
+
+      <div class="bike-item">
+        <div class="img">
+            <img src="page/bike4.jpg" alt="Book 1">
+        </div>
+        <div class="content">
+            <p class="sub-cat">Category: BIKE</p>
+            <p class="bike-name">Model: Honda CD 100</p>
+            <p class="bike-cost">Price: ₹500/hr</p>
+        </div>
+        <div class="details">
+            
+            <button class="wishlist-button">Rent now</button>
+        </div>  
+      </div>
+    </section>
+      
+
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

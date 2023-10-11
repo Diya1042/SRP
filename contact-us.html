@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact-us</title>
+    <link rel="stylesheet" href="contact-us.css">
+</head>
+<body>
+  <div>
+      
+
+      <div class="container">
+
+        <header>
+            <div class="app-info">
+                <img src="pics/logo.png" alt="App Icon" class="app-icon">
+                <p class="title">Two Wheeler Spot</p>
+            </div>
+            <div class="navbar">
+                <a href="login.html">Login</a>
+                <a href="signup.html">Sign Up</a>
+                <div class="menu-button" onclick="toggleSideMenu()">&#9776;</div>
+            </div>
+        </header>
+  
+        <!-- Side Menu -->
+        <div class="side-menu" id="sideMenu">
+            <span class="close-icon" onclick="toggleSideMenu()">&times;</span>
+            
+            <a href="about-us.html">About Us</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="contact-us.html">Contact-Us</a>
+            <a href="faqs.html">FAQs</a>
+            <a href="videos.html">Tutorial-Videos</a>
+            <a href="Feedbacks.html">Feedbacks</a>
+        </div>
+
+        
+  
+        <script>
+            function toggleSideMenu() {
+                var sideMenu = document.getElementById("sideMenu");
+                if (sideMenu.style.width === "250px") {
+                    sideMenu.style.width = "0";
+                } else {
+                    sideMenu.style.width = "250px";
+                }
+            }
+        </script>
+
+        <section class="contact-us">
+          <div class="contact-content">
+              <h1>Contact Us</h1>
+              <p class="query-para">If you have any questions, feedback, or inquiries, please don't hesitate to get in touch with us. We're here to assist you!</p>
+              <form>
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name" required><br><br>
+
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required><br><br>
+
+                  <label for="message">Message:</label>
+                  <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+                  <button type="submit">Submit</button>
+              </form>
+          </div>
+        </section>
+
+
+    <footer class="footer">
+      <div class="footer-logo">
+          <!-- <img src="pics/logo.png" alt="Book Reselling Logo"> -->
+          <span class="footer-title">Two Wheeler Spot</span>
+          <p class="footer-text">Convient . Affordable . Quick</p>
+      </div>
+      <div class="footer-content">
+          <div class="footer-section">
+              <h2>Trade or Rent two wheelers</h2>
+              <p>This is a convient platform for temporary transport seekers and unused two wheeler holders</p>
+          </div>
+          <div class="footer-section">
+              <div class="follow-us">
+                  <h3>Follow Us</h3>
+                  <a href="#" class="social-media-link">
+                      <img src="pics/facebook.jpg" alt="Facebook">
+                      Facebook
+                  </a>
+                  <a href="#" class="social-media-link">
+                      <img src="pics/instagram.jpg" alt="Instagram">
+                      Instagram
+                  </a>
+                  <a href="#" class="social-media-link">
+                      <img src="pics/twitter.jpg" alt="Twitter">
+                      Twitter
+                  </a>
+              </div>
+          </div>
+          <div class="footer-section">
+              <h2>Quick Links</h2>
+              <ul class="quick-links">
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="contact-us.html">Contact</a></li>
+                <li><a href="privacy-policy.html">privacy-policy</a></li>
+              </ul>
+          </div>
+      </div>
+  </footer>
+      
+
+
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
