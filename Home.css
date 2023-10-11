@@ -359,3 +359,54 @@ header {
 .quick-links a:hover {
   text-decoration: underline;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+* For screens smaller than 576px (e.g., mobile phones) */
+@media (max-width: 576px) {
+  .container {
+    background-position: center;
+  }
+
+  .main-text {
+    font-size: 24px;
+  }
+
+  .footer-title {
+    margin-left: 10px;
+  }
+
+  .footer-section {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+/* For screens larger than 576px (e.g., tablets and larger) */
+@media (min-width: 577px) {
+  .container {
+    background-position: 80%;
+  }
+
+  .main-text {
+    font-size: 36px;
+  }
+
+  .footer-title {
+    margin-left: 550px;
+  }
+
+  .footer-section {
+    width: 30%;
+    margin-left: 20px;
+  }
+}
