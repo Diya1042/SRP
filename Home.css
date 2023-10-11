@@ -370,6 +370,37 @@ header {
 
 
 
+/* Mobile-first styles (default) */
+
+/* Small screens */
+@media (min-width: 576px) {
+  /* Adjust styles for small screens */
+}
+
+/* Medium screens */
+@media (min-width: 768px) {
+  /* Adjust styles for medium screens */
+}
+
+/* Large screens */
+@media (min-width: 992px) {
+  /* Adjust styles for large screens */
+}
+
+/* Extra-large screens */
+@media (min-width: 1200px) {
+  /* Adjust styles for extra-large screens */
+}
+
+
+
+
+
+
+
+
+
+
 
 * For screens smaller than 576px (e.g., mobile phones) */
 @media (max-width: 576px) {
